@@ -6,14 +6,8 @@ public class Inviertelo {
 
     }
 
-    public void convers(String cadena){
-        StringBuilder newCadena = new StringBuilder();
-
-        char []newcadena= cadena.toCharArray();
-        for (int i = cadena.length(); i == 0; i--) {
-            newCadena.append(newcadena[i]);
-            System.out.println(newcadena[i]);
-        }
-        System.out.println(newCadena.toString());
+    public String convers(String cadena){
+        String cadenainvertida = new StringBuilder(cadena).reverse().toString();
+        return cadenainvertida;
     }
 }
