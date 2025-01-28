@@ -7,8 +7,7 @@ public class MaximoMeridio {
         int i = 1;
         for (int numero : numeros){
             if (numero > numeros[i]){
-                numeros[i] = numero;
-                vencedor = numeros[i];
+                vencedor = numero;
             }
         }
         return vencedor;

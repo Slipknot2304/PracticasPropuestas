@@ -4,7 +4,7 @@ public class MainImprime {
     public static void main(String[] args) {
 
         ImprimirArrays imprimirArrays = new ImprimirArrays();
-        int [] numeros = {19, 67, 56, 76, 9, 78};
+        int [] numeros = {19, 67, 56, 76, 9, 75};
         imprimirArrays.imprimirElementos(numeros);
 
         SumaArray sumaArray = new SumaArray();
@@ -14,5 +14,9 @@ public class MainImprime {
         MaximoMeridio maximoMeridio = new MaximoMeridio();
         int vencedor = maximoMeridio.encontrarMaximo(numeros);
         System.out.println("El numero mayor de entre todo ese arrelo es: " + vencedor);
+
+        InvierteArrelo invierteArrelo = new InvierteArrelo();
+        invierteArrelo.inviertelo(numeros);
+        imprimirArrays.imprimirElementos(numeros);
     }
 }
